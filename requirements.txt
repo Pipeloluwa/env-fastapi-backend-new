@@ -34,7 +34,7 @@ python-dotenv
 twilio
 Pillow
 httpx 
-google-api-python-client
+# google-api-python-client
 # THIS IS USED FOR ASYNCHRONOUS , LIKE WHEN I WAS UPLOADING FILES TO S3
 # tesserocr
 # pytesseract
