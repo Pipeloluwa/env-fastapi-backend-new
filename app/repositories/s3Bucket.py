@@ -15,8 +15,10 @@ s3= boto3.resource(
     service_name= "s3",
     # region_name= "eu-north-1",
     region_name= "us-east-1",
-    aws_access_key_id= os.getenv("aws_access_key_id"),
-    aws_secret_access_key= os.getenv("aws_secret_access_key")
+    # aws_access_key_id= os.getenv("aws_access_key_id"),
+    # aws_secret_access_key= os.getenv("aws_secret_access_key")
+    aws_access_key_id= "AKIAZQ3DQSULONVFSEHG",
+    aws_secret_access_key= "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"
     )
 
 # S3_BUCKET_NAME= "environmental-mapping-bucket"
@@ -27,8 +29,8 @@ bucket= s3.Bucket(S3_BUCKET_NAME)
 session= boto3.session.Session()
 s3_client= session.client(
     's3',
-    aws_access_key_id= os.getenv("aws_access_key_id"),
-    aws_secret_access_key= os.getenv("aws_secret_access_key")
+    aws_access_key_id= "AKIAZQ3DQSULONVFSEHG",
+    aws_secret_access_key= "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"
 )
 
 def id_folder_split(id):
